@@ -731,7 +731,7 @@ hr {
   border: none;
   font-size: 1.3rem;
 }
-footer {
+footer .main-container{
   padding: 2rem;
   background-color: var(--dark); /* Adjust the background color */
   color: #fff;
@@ -742,6 +742,11 @@ footer {
   align-items: center;
   justify-content: space-between;
   column-gap: auto; /* Adjust the gap between columns */
+}
+footer{
+  width: 100%;
+  background-color: var(--dark); /* Adjust the background color */
+
 }
 
 footer ul {
@@ -838,7 +843,7 @@ footer .container .title {
   width: 60%;
   margin-left: 11rem;
   margin-bottom: .5rem;
-  height: 3rem;
+  height: auto;
   font-size: 1.3rem;
   padding: 10px;
 }
@@ -869,14 +874,14 @@ footer .container .title {
 
 
 .contact-form{
-  width: 200rem;
+  width: 80rem;
 }
 
-/* Style inputs with type="text", select elements and textareas */
+
 .contact-form input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
   border-radius: 4px; 
   box-sizing: border-box; 
   margin-top: 6px; 
@@ -902,7 +907,10 @@ footer .container .title {
 
 .contact-form .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px var(--primary);
   padding: 20px;
   width: 100%;
+  color: #fff;
 }

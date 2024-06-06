@@ -53,3 +53,13 @@ function hideSideBar(){
   const sidebar = document.querySelector('.sidebar')
   sidebar.style.display = 'none';
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  var input = document.getElementById("messageInput");
+  
+  input.addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+          sendMessage();
+      }
+  });
+});
