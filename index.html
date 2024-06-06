@@ -8,42 +8,53 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" type="image/x-icon" href="/imgs/mainlogo.ico">
 </head>
 
 <body>
   <nav>
     <div class="chatsupport" id="chatSupport">
       <div class="chatbox" id="chatBox">
-          
+
       </div>
       <div class="input-box">
-          <input type="text" id="messageInput" placeholder="Type your message...">
-          <button onclick="sendMessage()"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+        <input type="text" id="messageInput" placeholder="Type your message...">
+        <button onclick="sendMessage()"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
       </div>
-  </div>
-  <button class="toggle-button" onclick="toggleChat()">Customer Service</button>
-    
+    </div>
+    <button class="toggle-button" onclick="toggleChat()">Customer Service</button>
+
     <div class="nav-img">
-      <img src="imgs/LOGO BLACK.png" alt="" />
+      <img src="imgs/mainlogo.png" alt="" />
       <h3>LUMINA</h3>
     </div>
     <div class="nav-links">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="hideOnMobile"><a href="#home">Home</a></li>
+        <li class="hideOnMobile"><a href="#about">About us</a></li>
+        <li class="hideOnMobile"><a href="#services">Services</a></li>
+        <li class="hideOnMobile"><a href="#pricing">Pricing</a></li>
+        <li class="hideOnMobile"><a href="#reviews">Reviews</a></li>
+        <li class="hideOnMobile"><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <div class="nav-btn">
-      <button class="btn">Try now</button>
+      <button class="btn"><a href="https://sephhsephh.github.io/LuminaAI_CHAT/" target="_blank">Try Now</a></button>
     </div>
+    <li onclick="showSideBar()"><a href="#" class="fa fa-bars"></a></li>
+    <ul class="sidebar">
+      <li onclick="hideSideBar()"> <a href="#"><span class="material-symbols-outlined">X</span></a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
   <main>
-    <div class="section hero"  id="home">
-      <div class="container intro"  data-aos="fade-right">
+    <div class="section hero" id="home">
+      <div class="container intro" data-aos="fade-right">
         <h1 id="title">
           <span class="span-prim">LUMINA</span>
           <span class="span-sec">AI</span>
@@ -184,7 +195,7 @@
             <p>Top-notch Security</p>
           </li>
         </ul>
-        <button class="btn">Try It Now!</button>
+        <button class="btn"><a href="https://sephhsephh.github.io/LuminaAI_CHAT/" target="_blank">Try It Now!</a></button>
       </div>
     </div>
     <div class="section four">
@@ -200,7 +211,7 @@
         <ul class="checklist">
           <hr />
           <li data-aos="fade-right" data-aos-delay="250">
-            <i class="fa fa-check-circle" aria-hidden="true" ></i>
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
             Photo Generating
           </li>
           <hr />
@@ -332,12 +343,12 @@
     <div class="section reviews" id="reviews">
       <div class="header">
         <h1>What our users say? </h1>
-        <p>Hear genuine stories from our satisfied customers about their exceptional experience with us</p>
+        <p>Hear genuine stories from our satisfied users about their exceptional experience with us</p>
       </div>
       <div class="container">
         <div class="review-card" data-aos="fade-in" data-aos-delay="250">
           <img src="imgs/julieb.jpg" alt="">
-          <p class="desc">The attention to detail and the quality of the product exceeded my expectations. Highly
+          <p class="desc">The attention to detail and the quality of the application exceeded my expectations. Highly
             recommended!</p>
           <div class="rating">
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -347,7 +358,7 @@
         </div>
         <div class="review-card" data-aos="fade-in" data-aos-delay="500">
           <img src="imgs/yilongma.jpg" alt="">
-          <p class="desc">The product not only met but exceeded my expectations. I'll definitely be a returning
+          <p class="desc">The application not only met but exceeded my expectations. I'll definitely be a returning
             user!
           </p>
           <div class="rating">
@@ -367,14 +378,40 @@
         </div>
       </div>
     </div>
-    <div class="sectiion contact" id="contact">
+    <div class="section contact" id="contact">
       <div class="container   header">
         <h1>Sign Up for Updates & Newsletter</h1>
       </div>
       <div class="container sign-up-container">
         <input type="email" name="" id="" placeholder="subscribe@lumina.com">
         <button class="btn">Sign Up</button>
-      </input>
+        </input>
+      </div>
+    </div>
+    <div class="section">
+      <div class="contact-form">
+        <div class="container">
+          
+          <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="ph">Philippines</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+          </form>
+        </div>
       </div>
     </div>
   </main>
@@ -437,7 +474,7 @@
         <li><a href="">Pricing</a></li>
         <li><a href="">Documentation <i class="fa fa-external-link" aria-hidden="true"></i>
         <li><a href="">API login <i class="fa fa-external-link" aria-hidden="true"></i>
-        </a></li>
+          </a></li>
       </ul>
     </div>
     <div class="container">
@@ -452,7 +489,7 @@
       <h1 class="title">Explore More</h1>
       <ul>
         <li><a href="">Lumina for business</a></li>
-        <li><a href="">Stories</a></li>      
+        <li><a href="">Stories</a></li>
       </ul>
     </div>
   </footer>
