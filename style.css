@@ -736,7 +736,7 @@ footer .main-container{
   background-color: var(--dark); /* Adjust the background color */
   color: #fff;
   max-width: 85.375rem; /* Set max-width for the footer */
-  margin: 0 auto; /* Center the footer */
+  margin: 0 auto; 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
