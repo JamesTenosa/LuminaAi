@@ -98,7 +98,7 @@ nav {
   padding: 20px;
 }
 
-nav li{
+nav li {
   list-style: none;
 }
 
@@ -731,22 +731,21 @@ hr {
   border: none;
   font-size: 1.3rem;
 }
-footer .main-container{
+footer .main-container {
   padding: 2rem;
   background-color: var(--dark); /* Adjust the background color */
   color: #fff;
   max-width: 85.375rem; /* Set max-width for the footer */
-  margin: 0 auto; 
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   column-gap: auto; /* Adjust the gap between columns */
 }
-footer{
+footer {
   width: 100%;
   background-color: var(--dark); /* Adjust the background color */
-
 }
 
 footer ul {
@@ -812,7 +811,7 @@ footer .container .title {
   margin-bottom: 5px;
   display: flex;
   flex-direction: column;
-  justify-content:end;
+  justify-content: end;
   text-align: right;
   border-radius: 15px;
 }
@@ -837,12 +836,12 @@ footer .container .title {
   border-radius: 15px;
 }
 
-.chat-message{
+.chat-message {
   border-radius: 10px;
   border: 1px solid black;
   width: 60%;
   margin-left: 11rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   height: auto;
   font-size: 1.3rem;
   padding: 10px;
@@ -866,31 +865,29 @@ footer .container .title {
   color: var(--primary);
 }
 
-.btn a{
+.btn a {
   text-decoration: none;
   color: #fff;
 }
 
-
-
-.contact-form{
+.contact-form {
   width: 80rem;
 }
 
-
-.contact-form input[type=text], select, textarea {
+.contact-form input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical 
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-
-.contact-form input[type=submit] {
+.contact-form input[type="submit"] {
   background-color: var(--primary);
   color: white;
   padding: 12px 20px;
@@ -899,11 +896,9 @@ footer .container .title {
   cursor: pointer;
 }
 
-
-.contact-form input[type=submit]:hover {
+.contact-form input[type="submit"]:hover {
   background-color: var(--secondary);
 }
-
 
 .contact-form .container {
   border-radius: 5px;
