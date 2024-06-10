@@ -17,33 +17,46 @@ window.addEventListener('scroll', function() {
 });
 
 function toggleChat() {
-  var chatSupport = document.getElementById("chatSupport");
-  if (chatSupport.style.right === "0" || chatSupport.style.right === "-900px") {
-      
-      chatSupport.style.right = "0";
+  const chatbox = document.getElementById('chatbox');
+  if (chatbox.style.right === '20px') {
+      chatbox.style.right = '-450px';
   } else {
-      
-      chatSupport.style.right = "-900px";
+      chatbox.style.right = '20px';
   }
 }
 
 function sendMessage() {
-  let messageInput = document.getElementById("messageInput");
-  let message = messageInput.value.trim();
-  if (message !== "") {
-      let chatBox = document.getElementById("chatBox");
-
-      let messageDiv = document.createElement("div");
-      messageDiv.classList.add("chat-message");
-      messageDiv.innerText = message;
-
-      chatBox.appendChild(messageDiv);
-
-      chatBox.scrollTop = chatBox.scrollHeight;
-
-      messageInput.value = "";
+  const chatInput = document.getElementById('chat-input');
+  const message = chatInput.value.trim();
+  if (message) {
+      appendMessage('user', message);
+      chatInput.value = '';
+      getBotReply();
   }
 }
+
+function appendMessage(sender, message) {
+  const chatboxBody = document.getElementById('chatbox-body');
+  const chatMessage = document.createElement('div');
+  chatMessage.classList.add('chat-message', sender);
+  chatMessage.textContent = message;
+  chatboxBody.appendChild(chatMessage);
+  chatboxBody.scrollTop = chatboxBody.scrollHeight; // Scroll to the bottom
+}
+
+function getBotReply() {
+  setTimeout(() => {
+      appendMessage('bot', 'Thank you for your message! We will try to reply to you as soon as possible.');
+  }, 1000); // Simulate a delay for the bot response
+}
+
+// Event listener for the Enter key
+document.getElementById('chat-input').addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+      sendMessage();
+  }
+});
+
 
 function showSideBar(){
   const sidebar = document.querySelector('.sidebar')

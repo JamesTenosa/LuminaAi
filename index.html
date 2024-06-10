@@ -13,16 +13,21 @@
 
 <body>
   <nav>
-    <div class="chatsupport" id="chatSupport">
-      <div class="chatbox" id="chatBox">
+    <button class="chat-toggle" onclick="toggleChat()">Customer Service</button>
 
-      </div>
-      <div class="input-box">
-        <input type="text" id="messageInput" placeholder="Type your message...">
-        <button onclick="sendMessage()"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-      </div>
+<div class="chatbox" id="chatbox">
+    <div class="chatbox-header">
+        <h4>Chat Service</h4>
+        <button class="close-chat" onclick="toggleChat()">×</button>
     </div>
-    <button class="toggle-button" onclick="toggleChat()">User Support</button>
+    <div class="chatbox-body" id="chatbox-body">
+        <!-- Chat messages will appear here -->
+    </div>
+    <div class="chatbox-footer">
+        <input type="text" id="chat-input" placeholder="What would you like to know?">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
 
     <div class="nav-img">
       <img src="imgs/mainlogo.png" alt="" />
@@ -264,81 +269,82 @@
       </div>
       <div class="container prices">
         <div class="price-card" data-aos="fade-right">
-          <h2 class="title" id="basic">Basic</h2>
-          <p class="desc">
-            Standard AI chatbot, personalized recommendations
-          </p>
-          <h1 class="price">$0</h1>
-          <button class="btn">Get started</button>
-          <ul class="checklist">
-            <hr />
-            <li>
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-              An AI chatbot that can understand your queries
-            </li>
-            <hr />
-            <li>
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-              Personalized recommendations based on your preferences
-            </li>
-            <hr />
-            <li>
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-              Ability to explore the app and its features without any cost
-            </li>
-          </ul>
+            <h2 class="title" id="basic">Basic</h2>
+            <p class="desc">
+                Standard AI chatbot with personalized recommendations
+            </p>
+            <h1 class="price">$0</h1>
+            <button class="btn">Get started</button>
+            <ul class="checklist">
+                <hr />
+                <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    An AI chatbot that can understand your queries
+                </li>
+                <hr />
+                <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    Personalized recommendations based on your preferences
+                </li>
+                <hr />
+                <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    Ability to explore the app and its features without any cost
+                </li>
+            </ul>
         </div>
         <div class="price-card" data-aos="fade-up">
-          <h2 class="title" id="premium">Premium</h2>
-          <p class="desc">
-            Advanced AI chatbot, priority support, analytics dashboard
-          </p>
-          <h1 class="price">$9.99</h1>
-          <button class="btn">Get started</button>
-          <ul class="checklist">
-            <hr />
-            <li>
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-              An advanced AI chatbot that can understand complex queries
-            </li>
-            <hr />
-            <li>
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-              An analytics dashboard to track your conversations
-            </li>
-            <hr />
-            <li>
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-              Priority support to solve issues quickly
-            </li>
-          </ul>
+            <h2 class="title" id="premium">Premium</h2>
+            <p class="desc">
+                Advanced AI chatbot, analytics dashboard, and priority support
+            </p>
+            <h1 class="price">$9.99</h1>
+            <button class="btn">Get started</button>
+            <ul class="checklist">
+                <hr />
+                <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    An advanced AI chatbot that can understand complex queries
+                </li>
+                <hr />
+                <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    An analytics dashboard to track your conversations
+                </li>
+                <hr />
+                <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    Priority support to solve issues quickly
+                </li>
+            </ul>
         </div>
         <div class="price-card" data-aos="fade-left">
-          <h2 class="title" id="enterprise">Enterprise</h2>
-          <p class="desc">
-            Custom AI chatbot, advanced analytics, dedicated account
-          </p>
-          <h1 class="price">$---</h1>
-          <button class="btn">Contact Us</button>
-          <ul class="checklist">
-            <hr />
-            <li>
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-              An AI chatbot that can understand your queries
-            </li>
-            <hr />
-            <li>
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-              Personalized recommendations based on your preferences
-            </li>
-            <hr />
-            <li>
-              <i class="fa fa-check-circle" aria-hidden="true"></i>
-              Ability to explore the app and its features without any cost
-            </li>
-          </ul>
+            <h2 class="title" id="enterprise">Enterprise</h2>
+            <p class="desc">
+                Custom AI chatbot, advanced analytics, and dedicated account manager
+            </p>
+            <h1 class="price">$---</h1>
+            <button class="btn">Contact Us</button>
+            <ul class="checklist">
+                <hr />
+                <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    A custom AI chatbot tailored to your business needs
+                </li>
+                <hr />
+                <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    Advanced analytics for detailed insights
+                </li>
+                <hr />
+                <li>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    Dedicated account manager for personalized support
+                </li>
+            </ul>
         </div>
-      </div>
+    </div>
+    
     </div>
     <div class="section reviews" id="reviews">
       <div class="header">
