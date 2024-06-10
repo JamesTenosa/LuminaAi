@@ -185,7 +185,7 @@ nav ul li a {
   background-color: var(--secondary);
   transition: all 0.42s;
 }
-
+/**/
 .btn:hover {
   color: var(--primary);
   background-color: #fff;
