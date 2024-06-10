@@ -191,7 +191,7 @@ nav ul li a {
   background-color: #fff;
   border: 0.3125rem solid var(--secondary);
 }
-.btn:hover a{
+.btn:hover a {
   color: var(--primary);
 }
 
@@ -738,7 +738,7 @@ footer .main-container {
   padding: 2rem;
   background-color: var(--dark); /* Adjust the background color */
   color: #fff;
-  max-width: 85.375rem; 
+  max-width: 85.375rem;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -804,9 +804,9 @@ footer .container .title {
   z-index: 1000;
   transition: transform 0.3s ease-in-out;
   border-radius: 20px;
-  transition: all .42s;
+  transition: all 0.42s;
 }
-.chat-toggle:hover{
+.chat-toggle:hover {
   background-color: var(--secondary);
 }
 
@@ -836,16 +836,16 @@ footer .container .title {
   align-items: center;
   border-radius: 10px 10px 0 0;
 }
-.close-chat{
+.close-chat {
   background-color: var(--secondary);
   color: #fff;
   border-radius: 25px;
   font-size: 1.5rem;
   width: 50px;
   cursor: pointer;
-  transition: all .42s;
+  transition: all 0.42s;
 }
-.close-chat:hover{
+.close-chat:hover {
   background-color: var(--dark);
   color: var(--primary);
 }
@@ -879,9 +879,9 @@ footer .container .title {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
-  transition: all .42s;
+  transition: all 0.42s;
 }
-.chatbox-footer button:hover{
+.chatbox-footer button:hover {
   background-color: var(--secondary);
   color: #fff;
 }
