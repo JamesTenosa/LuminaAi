@@ -53,7 +53,7 @@ function getBotReply() {
   }, 1000); // Simulate a delay for the bot response
 }
 
-// Event listener for the Enter key
+
 document
   .getElementById("chat-input")
   .addEventListener("keypress", function (e) {
